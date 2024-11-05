@@ -1,0 +1,453 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.student-list-container {
+  background-color: #1c1c1c; /* Dark background */
+  color: #ffffff; /* White text for readability */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00ffcc; /* Highlight title */
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-input, .class-filter, .sort-filter {
+  padding: 10px;
+  border: 1px solid #00ffcc; /* Highlight borders */
+  border-radius: 5px;
+  background: #2a2a2a; /* Darker input background */
+  color: #ffffff; /* White text */
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th {
+  background-color: #333; /* Darker header */
+  color: #ffffff; /* White text */
+  padding: 10px;
+}
+
+.student-table td {
+  padding: 10px;
+  border: 1px solid #444; /* Subtle border */
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.view-btn {
+  background-color: #007bff; /* Blue for view */
+  color: white;
+}
+
+.edit-btn {
+  background-color: #ffc107; /* Yellow for edit */
+  color: black;
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Red for delete */
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8; /* Slightly fade on hover */
+}
+
+.pagination-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  padding: 8px 12px;
+  background-color: #333; /* Dark background for pagination */
+  color: #ffffff; /* White text */
+  border-radius: 5px;
+  border: none;
+}
+
+.page-item.active .page-link {
+  background-color: #00ffcc; /* Highlight active page */
+  color: #000; /* Black text for active page */
+}
+
+
+
+.footer {
+  background-color: #1c1c1c; /* Dark background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #444; /* Subtle top border */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.brand {
+  color: #00ffcc; /* Highlight color for the link */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.brand:hover {
+  color: #00cc99; /* Change color on hover */
+}
+
+
+
+
+
+.navbar-custom {
+  background-color: white; /* Dark background for the navbar */
+  border-bottom: 2px solid #00ffcc; /* Accent border */
+}
+
+.brand-logo {
+  height: 50px; /* Adjust logo size */
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #ffffff; /* White text */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #00ffcc; /* Highlight color on hover */
+}
+
+.icon {
+  margin-right: 5px; /* Spacing between icon and text */
+}
+
+.navbar-toggler {
+  border: none; /* Remove default border */
+}
+
+.navbar-toggler-icon {
+  background-color: #00ffcc; /* Color for the toggle icon */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #160930 !important;
+}
+
+
+
+
+
+
+.navbar-toggler {
+  outline: none;
+  box-shadow: none;
+  background: crimson !important;
+}
+
+.nav-link {
+  color: crimson !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-link:hover {
+  color: green !important;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* ChartJS Legend Styling */
+.chart-container .chartjs-render-monitor {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*per class students*/
+.students-per-class {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0 30%;
+}
+.students-per-class p {
+  margin: 4px 0;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 4px;
+  text-align: center;
+  box-shadow: 0 2px 10px #0ef;
+  background-color: #fff;
+  color: #000;
+}
+
+
+/*student list*/
+
+.studentDetails-container,
+.edit-container,
+.register-container {
+  background-color: #160930;;
+  padding: 2rem;
+  border-radius: 8px;
+  min-height: 100vh;
+}
+
+.inborder {
+ border: 1px solid #0ef !important;
+}
+
+.inborder:focus {
+ box-shadow: 0 2px 10px #0ef !important;
+}
+
+
+/* Card Styling */
+.edit-student-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h2 {
+  color: #343a40;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+
+/* Table Styling */
+.table {
+  border-radius: 8px;
+}
+
+th {
+ color: #fff !important;
+ background-color: crimson !important;
+ text-align: center !important;
+}
+
+.btn-group {
+  gap: 5px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: crimson;
+}
+
+.pagination .page-link:hover {
+  color: white;
+  background-color: crimson;
+}
+
+/*students details*/
+.glow {
+  box-shadow: 0 2px 10px #0ef !important;
+}
+
+.text {
+  color: crimson;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.responsive h4 {
+  font-weight: normal;
+}
+
+strong {
+ color: green;
+}
+
+.btn-crimson {
+  background-color: crimson !important;
+  color: white !important;
+  padding: .5rem .5rem;
+  border-radius: 5px;
+  Text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+}
+
+
+.btn-crimson:hover {
+  background-color: green !important;
+  box-shadow: 0 2px 10px green;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: .5rem;
+}
+
+/*student reg*/
+.field input {
+  border: 1px solid #0ef;
+}
+
+.field input:hover {
+  box-shadow: 0 2px 10px #0ef;
+}
+
+
+
+
+/*footer section*/
+
+footer {
+  box-shadow: 0px -4px 6px #0ef;
+  background-color: #fff;
+  bottom: 0;
+  
+}
+
+footer p {
+  text-align: center;
+  padding: 5px; 
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+footer p .brand {
+ color: crimson;
+ text-decoration: none;
+}
+
+footer p .brand:hover {
+  color: green;
+}
+
+@media only screen and (max-width: 768px) {
+  .total-students-box {
+    margin: 2rem 10%;
+  } 
+
+  .students-per-class {
+    margin: 0 5% ;
+  }
+  
+  .btn-container {
+    padding: 0rem;
+    flex-direction: column;
+  }
+
+ 
+}
+
+.dashboard-container {
+  background-color: #1e1e1e; /* Dark background for the entire dashboard */
+  color: #ffffff; /* White text for readability */
+  padding: 20px; /* Add some padding */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.home-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00ffcc; /* Highlighted heading color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 800px; /* Limit chart width */
+  margin-bottom: 20px; /* Space below chart */
+  background: rgba(30, 30, 30, 0.8); /* Slightly transparent dark background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Padding inside the chart container */
+}
+
+.total-students-box {
+  background-color: #2a2a2a; /* Darker background for total students box */
+  border-radius: 8px; /* Rounded corners */
+  width: 100%;
+  max-width: 300px; /* Limit box width */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Space below the box */
+}
+
+.total-count {
+  color: #00ffcc; /* Highlight total count */
+}
+
+.students-per-class {
+  text-align: center; /* Center the class count text */
+}
+
+.class-count {
+  margin: 5px 0; /* Space between each class count */
+}
+
+.class-number {
+  color: #00ffcc; /* Highlight class number */
+}
